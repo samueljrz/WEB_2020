@@ -20,13 +20,13 @@ export default class App extends Component {
                   <Link to={'/'} className="nav-link">Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to={'/list'} className="nav-link">List</Link>
+                  <Link to={'/List'} className="nav-link">List</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to={'/create'} className="nav-link">Create</Link>
+                  <Link to={'/Create'} className="nav-link">Create</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to={'/edit'} className="nav-link">Edit</Link>
+                  <Link to={'/Edit'} className="nav-link">Edit</Link>
                 </li>
               </ul>
             </div>

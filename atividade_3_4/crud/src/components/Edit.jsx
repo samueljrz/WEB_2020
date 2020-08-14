@@ -25,7 +25,7 @@ export default class Edit extends Component{
   }
 
   componentDidMount() {
-    console.log(this.props.match.params.id)
+    //console.log(this.props.match.params.id)
     axios.get('http://localhost:3001/disciplinas/'+this.props.match.params.id)
       .then(
         (res) => {
@@ -53,7 +53,7 @@ export default class Edit extends Component{
       capacidade: this.state.capacidade
     }
 
-    axios.put('http://localhost:3001/disciplinas/'+this.props.params.UserId, disciplinaAtt)
+    axios.put('http://localhost:3001/disciplinas/'+this.props.match.params.id, disciplinaAtt)
       .then(
         res => {
           this.props.history.push('/list')
